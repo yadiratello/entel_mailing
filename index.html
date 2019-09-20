@@ -1,127 +1,292 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" style=""
-    class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js csstransforms csstransforms3d csstransitions responsejs ">
+<html lang="es" style="color: #000; margin: 0; padding: 0;background-color:#F1F5F6;">
 
 <head>
-    <title>{subject}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style type="text/css" media="only screen and (max-width: 480px)">
-        /* Mobile styles */
-        @media only screen and (max-width: 480px) {
-            [class="w320"] {
-                width: 320px !important;
-            }
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta http-equiv="Contetn-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui" />
+  <style type="text/css" media="all">
+    @media screen and (max-width: 700px),
+    screen and (max-device-width: 700px) {
 
-            [class="mobile-block"] {
-                width: 100% !important;
-                display: block !important;
-            }
-        }
-    </style>
+      #ofertas .td,
+      #eventos .td {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+
+
+    @media (min-width:700px) {
+      .td#masInfo {
+        text-align: left;
+        display: inline-block !important;
+      }
+
+      .td .td #telefono-footer {
+        text-align: right;
+      }
+      .fondo-bajo{
+        width: 700px;
+      }
+      .footer{
+        width: 700px!important;
+        margin: auto;
+      }
+      .fondo-bajo{
+        width: 705px!important;
+        margin: auto;
+      }
+      /*cambiando la posicion de los elementos*/
+      .descripcion-celular{
+        position: relative;
+        left: 300px;
+      }
+      .celular{
+        position: relative;
+        left:-300px;
+      }
+
+    }
+
+    @media (min-width:631px) or (max-width: 700px) {
+      .td {
+        text-align: center;
+      }
+
+      #telefono-footer {
+        margin: auto 0 0px auto !important;
+      }
+
+    }
+
+
+    @media (max-width: 630px) {
+      #imgLogoEntel {
+        width: auto !important;
+      }
+
+      #logo-bbva {
+        text-align: center !important;
+        margin: auto !important;
+      }
+
+      #imgPhone {
+        width: auto !important;
+        max-width: 365px !important;
+      }
+
+      #tableImgPhone {
+        width: auto !important;
+        max-width: 370px !important;
+      }
+
+      #beneficios,
+      #beneficios1 {
+        width: 97% !important;
+        max-width: 97% !important;
+      }
+
+      #ofertas {
+        text-align: center !important;
+      }
+
+      #ofertas img {
+        margin-left: auto !important;
+      }
+
+      #telefono-footer {
+        margin: auto auto 0px auto !important;
+      }
+
+      #restricciones {
+        margin: 0rem 1rem 1.5em 0.5rem !important;
+      }
+
+      #telefonoHidden {
+        margin-top: 16px !important;
+        display: block !important;
+        width: 100%;
+      }
+
+      #masInfoHidden {
+        display: block !important;
+        width: 100%;
+      }
+
+      #telefono {
+        display: none !important;
+      }
+
+      #masInfo {
+        display: none !important;
+      }
+    }
+  </style>
 </head>
 
-<body style="margin: 0px; cursor: auto;" class="ui-sortable">
-    <div data-section-wrapper="1">
+<body style="color: #5f5f5f; margin: 0; padding: 0;background-color:#fff; font-family: 'Verdana',sans-serif">
+
+  <table id="m_wrap" cellpadding="0" cellspacing="0" border="0" align="center"
+    style="max-width: 700px; width: 100%; margin: 0em auto 0 auto; background: rgb(255, 255, 255); color:#5f5f5f;">
+    <tr>
+      <td id="m_wrap_inner" align="center" style="max-width: 700px; width: 100%; margin: 0 auto; background:#004FB9;">
+        <table id="main" align="center" cellpadding="0" cellspacing="0" border="0"
+          style="width: 100%; margin-left:20px; margin-top:20px;">
+          <tr>
+            <td>
+              <img id="imgLogoEntel" src="https://entel.segmentid.pro/media/images/Martes10/Group_3.2.png"
+                style="width: 118px; height:34px; text-align: left;" />
+            </td>
+          </tr>
+        </table>
+        <table id="eventos" align="center" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="td">
+                <img id="imgPhone" src="images/¡El equipo que quieres a un super precio!.png" alt=""
+                  style="max-width: 472px; border: none; display: block; margin-top: 28px;" />
+            </td>
+          </tr>
+        </table>
+        <table class="compra-sin-tarjeta"
+          style="width: 460px;height: 58px;background: rgba(237, 245, 252, 0.1);left: 114px;top: 132px; font-family: Barlow;border:1px dashed #B2CBE2;box-sizing: border-box;border-radius:5px;margin:10px;margin-top: 20px;"
+          id="eventos" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td style="text-align: center; color: #fff;padding-left: 20px;padding-right: 20px;margin-top:-12px;" class="td">
+              <strong>
+                <p
+                  style="height: 15px;left:119px;top:143px; font-size: 18px;line-height: 11px;letter-spacing: -0.02em;">
+                  ¡Compra sin tarjeta de crédito con <span><img src="images/Group 3.1.png" alt=""></span><span
+                    style="width: 92.21px;height: 16px;left: 439px;top:144px;">PagoEfectivo!</span>
+              </strong></p>
+              <p
+                style="width: 379px;height: 16px;margin-left: 24px;top:169px;padding-top: 5px; font-size: 14px;line-height: 11px;letter-spacing: -0.02em;">
+                En agencias bancarias, agentes o
+                transferencias desde tu banca.
+              </p>
+              <!--<img id="imgPhone" src="images/¡El equipo que quieres a un super precio!.png" alt=""
+                  style="max-width: 472px; border: none; display: block; margin-top: 28px;" />-->
+              </a>
+            </td>
+          </tr>
+        </table>
+
+
+        <table id="eventos" align="center" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="td descripcion-celular">
+              <a href="https://catalogo.entel.pe/galaxy-a30-azul-chip-65-w/p?modalidad=postpago-migra&plan=chip-65.9&oferta=regular&cuota=0&utm_source=mautic&utm_medium=email&utm_campaign=bbva-dscto-sep&utm_content=porta-a30"
+                target="_blank" style="cursor: pointer">
+                <img src="images/image (12).png" alt="Galaxy A30">
+              </a>
+            </td>
+            <td class="td celular">
+              <a href="https://catalogo.entel.pe/galaxy-a30-azul-chip-65-w/p?modalidad=postpago-migra&plan=chip-65.9&oferta=regular&cuota=0&utm_source=mautic&utm_medium=email&utm_campaign=bbva-dscto-sep&utm_content=porta-a30"
+                target="_blank" style="cursor: pointer">
+                <img src="images/samsumg-desktop.png" alt="Galaxy A30">
+              </a>
+            </td>
+          </tr>
+        </table>
+  </table>
+
+  <table class="fondo-bajo" style="width:100%;margin:auto;" >
+    <tr>
+      <td>
+        <img width="100%" style="margin-top: -2.6px;" src="images/Mask Group.png" alt="">
+      </td>
+    </tr>
+  </table>
+
+  <table id="main" align="center" cellpadding="0" cellspacing="0" border="0"
+    style="width: 100% !important;padding-top:40px;background-color:#ffffff !important;text-align: center;">
+    <tr>
+      <td style="display: inline-block; color:#004FB9; width: 90%; margin-bottom: 20px;">
+        <b>Tus compras por nuestra web están 100% aseguradas</b><img
+          src="https://entel.segmentid.pro/media/images/Martes10/Group.png" style="margin-left:8px;" />
+      </td>
+    </tr>
+
+  </table>
+  <table align="center" cellpadding="0" cellspacing="0" border="0"
+    style="width: 100%;background-color:#ffffff !important;text-align: center;">
+    <tr>
+      <td class="td" style="display: inline-block">
         <center>
-            <table data-section="1" style="width: 600;" width="600" cellpadding="0" cellspacing="0">
-                <tbody>
-                    <tr>
-                        <td>
-                            <div data-slot-container="1" style="min-height: 30px" class="ui-sortable">
-                                <div data-slot="image">
-                                    <img style="width:100%"
-                                        src="https://entel.segmentid.pro/media/images/Lunes09/BANNERMAIL0909.png"
-                                        alt="An image" class="fr-view" 
-                                        data-froldsrc="https://entel.segmentid.pro/themes/blank.png" /><br />
-                                    <div style="clear:both"></div>
-                                </div>
-                                <div data-slot="text">
-                                    <div style="text-align: center;"><span
-                                            style="color: rgb(41, 105, 176);"><br /></span></div>
-                                    <div style="text-align: center;font-weight: bold"><span style="color: rgb(41, 105, 176);"><span
-                                                style="font-family: Verdana,Geneva,sans-serif;"><span
-                                                    style="font-size: 18px;">¡El delivery es
-                                                    gratis!</span></span></span></div>
-                                    <div style="text-align: center;"><span
-                                            style="color: rgb(41, 105, 176);"><br /></span></div>
-                                    <div style="text-align: center;"><span
-                                            style="color: rgb(41, 105, 176);"><br /></span></div>
-                                    <div style="text-align: center;"><span style="color: rgb(41, 105, 176);"><span
-                                                style="font-family: Verdana,Geneva,sans-serif;"><span
-                                                    style="font-size: 18px;font-weight: bold">Tus compras por nuestra web están 100%
-                                                    aseguradas</span></span></span></div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+          <img id="beneficios" src="https://entel.segmentid.pro/media/images/Jueves29/beneficios2.png"
+            alt="Recibe en tu equipo en casa, Sin Colas ¡Y sin molestías!"
+            style="max-width: 50%; border: none; margin: 0 auto;" />
+          <img id="beneficios1" src="https://entel.segmentid.pro/media/images/Jueves29/beneficios1.png"
+            alt="Compra online 100% segura, Abierto todos los días del año"
+            style="max-width: 50%; border: none; margin: 0 auto;" />
         </center>
-    </div>
-    <div data-section-wrapper="two-column">
-        <div data-section-wrapper="1">
-            <center>
-                <table data-section="1" style="margin: 0 auto;border-collapse: collapse !important;width: 600px;"
-                    class="w320" border="0" cellpadding="0" cellspacing="0" width="600">
-                    <tbody>
-                        <tr>
-                            <td align="center" valign="top">
-                                <table align="left" border="0" cellpadding="10" cellspacing="0" width="300"
-                                    class="mobile-block">
-                                    <tbody>
-                                        <tr>
-                                            <td data-slot-container="1" valign="top"
-                                                style="padding-left: 5px; padding-right: 5px;" class="ui-sortable">
-                                                <div data-slot="image">
-                                                    <img src="https://entel.segmentid.pro/media/images/3ba369044a83f21045ed43483045cc66.png"
-                                                        alt="An image" class="fr-view"
-                                                        style="display: inline-block; vertical-align: bottom; margin: 5px 5px 5px 0px; max-width: calc(100% - 5px); width: 330px; height: 47px; float: left;" /><br />
-                                                    <div style="clear:both"></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table align="right" border="0" cellpadding="10" cellspacing="0" width="300"
-                                    class="mobile-block">
-                                    <tbody>
-                                        <tr>
-                                            <td data-slot-container="1" valign="top"
-                                                style="padding-left: 5px; padding-right: 5px;" class="ui-sortable">
-                                                <div data-slot="image">
-                                                    <img src="https://entel.segmentid.pro/media/images/bef10b6a0e3d3e50fd7c12f02fd49e7f.png"
-                                                        alt="An image" class="fr-view"
-                                                        style="display: inline-block; vertical-align: bottom; margin: 5px 0px 5px 5px; max-width: calc(100% - 5px); width: 291px; height: 47px; float: right;" /><br />
-                                                    <div style="clear:both"></div>
+      </td>
+    </tr>
+  </table>
 
 
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table align="left" border="0" cellpadding="10" cellspacing="0" width="600"
-                                    class="mobile-block">
-                                    <tr>
-                                        <td>
-                                            <img src="images/web.png" alt="">
-                                            <img src="images/instagram.png" alt="">
-                                            <img src="images/facebook.png" alt="">
-                                        </td>
-                                        <td style="text-align: right"><img src="images/telefono.png" alt=""></td>
-                                    </tr>
-                                </table>
-                                <table>
-                                    <tr>
-                                        <td style="font-size: 12px; color: #62D4F3;text-align: center;padding-bottom: 15px;">*Válido para compras de equipos mayores a S/.399 y en modalidad pago único, en modalidad postpago y equipo liberado, pagando con tarjetas de crédito del BBVA del 09 al 15 de setiembre de 2019 a través de www.entel.pe. Solo aplica una promoción por cliente.</td>
-                                    </tr>
-                                </table>
-                    </tbody>
-                </table>
-                </td>
-                </tr>
-                </tbody>
-                </table>
-            </center>
-        </div>
-    </div>
+  <table style="margin:0 auto;" bgcolor="#F4F4F4" id="ofertas" align="center" cellpadding="0" cellspacing="0" border="0"
+    style="background-color: #F4F4F4; width: 100%!important;padding-top: 25px;">
+    <tr style="width:100%;background-color: #F4F4F4;">
+      <td id="masInfo" class="td" bgcolor="#F4F4F4" style="padding-top: 10px; padding-bottom: 10px;">
+        <a href="https://www.entel.pe/" style="display: inline-block; vertical-align: middle;">
+          <img src="https://entel.segmentid.pro/media/images/Martes10/web.png" alt=""
+            style="border: none;  margin-left:40px;" />
+        </a>
+        <a href="https://www.instagram.com/entel_peru" style="display: inline-block; vertical-align: middle;">
+          <img width="28" src="https://entel.segmentid.pro/media/images/Martes10/instagram.png" />
+        </a>
+        <a href="https://www.facebook.com/EntelPeru" style="display: inline-block; vertical-align: middle;">
+          <img width="28" src="https://entel.segmentid.pro/media/images/Martes10/facebook.png" />
+        </a>
+      </td>
+
+      <td id="telefono" class="td" bgcolor="#F4F4F4" style="background: #F4F4F4">
+        <a href="tel:080009001">
+          <img id="telefono-footer" src="https://entel.segmentid.pro/media/images/Martes10/telefono.png" alt=""
+            style="border: none; display: block; margin: auto 0 0px auto;" />
+        </a>
+      </td>
+      <td id="telefonoHidden" class="td" bgcolor="#F4F4F4"
+        style="background: #F4F4F4;display: none;width: 100% !important;">
+        <a href="tel:080009001">
+          <img id="telefono-footer" src="https://entel.segmentid.pro/media/images/Martes10/telefono.png" alt=""
+            style="border: none; display: block; margin: auto 0 0px auto;" />
+        </a>
+      </td>
+      <td id="masInfoHidden" class="td" bgcolor="#F4F4F4"
+        style="padding-top: 10px; padding-bottom: 10px;display: none;width: 100% !important;">
+        <a href="https://www.entel.pe/" style="display: inline-block; vertical-align: middle;">
+          <img src="https://entel.segmentid.pro/media/images/Martes10/web.png" alt=""
+            style="border: none; display: block; padding-left:40px;" />
+        </a>
+        <a href="https://www.instagram.com/entel_peru" style="display: inline-block; vertical-align: middle;">
+          <img width="28" src="https://entel.segmentid.pro/media/images/Martes10/instagram.png" />
+        </a>
+        <a href="https://www.facebook.com/EntelPeru" style="display: inline-block; vertical-align: middle;">
+          <img width="28" src="https://entel.segmentid.pro/media/images/Martes10/facebook.png" />
+        </a>
+      </td>
+    </tr>
+  </table>
+  </td>
+  </tr>
+  <table class="footer" style="width:100%;margin:auto;">
+    <tr>
+      <td align="left" style="font-family:Barlow;font-size:11px;color:#5F5F5F !important; margin: 0 !important;" cellpadding="0" cellspacing="0">
+        <p id="restricciones"
+          style="margin: 0 20px 1.5em 20px; text-align: center; padding-top:30px;color:#5F5F5F !important;">
+          Plan Postpago y equipo en cuotas sujeto a evaluación crediticia. Disponible hasta el 01/09/19 y/o hasta agotar
+          stock mínimo de 02 unidades. Válido para portabilidad de personas naturales con DNI. Más información sobre
+          condiciones para portar y planes Postpago <a href="">AQUÍ</a>
+        </p>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+
+</html>
